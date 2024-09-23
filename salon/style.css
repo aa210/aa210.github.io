@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Arima+Madurai:100|Bad+Script|Fascinate|NTR');
+
+:root {
+  --darkest: #1a1100;
+  --orange: #996300;
+  --light-orange: #b37400;
+  --brown: #664200;
+  --dark-gray: #453a35;
+  
+}
+
+@media screen and (max-width:575px){
+  #about .background-layer, #team, #hero{
+   padding:10%;
+  }
+  
+   .pop-up-images{
+    display:none;
+  }  
+  #gallery img{cursor:
+    default;
+  }
+}
+
+@media screen and  (max-width: 930px) {  
+  
+    .col, .col-xs-12 , .col-xs-1, .col-xs-10, .fade-in-block{
+  z-index:0;
+}
+   #services .row .col-xs-6{
+    padding: 1% 2%;
+  }
+  
+  #navigation{
+    display:none;
+  }
+  #toggle-menu-mobile {
+    display:none;
+    text-align:center;
+    margin:0px auto;
+  }
+  
+  #mobile-menu-button{
+    display:inline;
+    border:1px solid var(--dark-gray);
+    border radius: 0px;
+    color:var(--dark-gray);
+    margin:0px auto;
+  }
+ 
+ #social-feed img{
+  display:inline;
+  margin:-3px;
+  height:220px;
+  width:50%;  
+} 
+  #top-div-mobile{
+  padding: 2%;
+  background-color: white;
+  width: 100%;
+    margin:0px auto;
+    text-align:center;
+    border-bottom: 2px solid var(--orange);
+}
+}
+@media screen and (min-width: 930px){  
+  #toggle-menu-mobile, #mobile-menu-button{
+    display:none;
+  }
+  #navigation{
+    display:inline-block;
+  }
+  
+ 
+  #social-feed img{
+  display:inline;
+  margin:-4px;
+  height:250px;
+  width:25%;  
+} 
+  
+  #top-div-mobile{
+  display:none;
+}
+  
+
+}
+@media screen and (min-width: 1250){
+  h1{
+    font-size: 5em;
+  }
+  p, #hero-text p, .links,  .links h4, .navbar-brand, .about-text p, #team,  #footer h4, #footer h2{
+    font-size: 3.2em;
+  }
+  
+}
+
+/*everything else*/
+
+
+*{
+  box-sizing:border-box;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+    
+h1{
+  font-family:"Bad Script";
+  font-size:3.5em;
+  margin-bottom: 5%; 
+  font-weight: bold; 
+  text-align: center;
+}
+  
+  h2{
+     font-family:"Bad Script";
+  font-size:2.1em;
+    margin-bottom: 3%; 
+    text-align: center;
+    font-weight: bold;
+}
+
+
+ #about{
+     background-image: url('https://luxurylaunches.com/wp-content/uploads/2015/04/spa-moment.jpg');
+  background-size:cover;
+  color: white;
+  
+}
+
+  #gallery{
+  text-align:center;
+  padding: 15%;
+}
+
+#hero {
+  background-image:url('https://www.publicdomainpictures.net/pictures/570000/velka/serene-ambiance-of-massage-studio-1704536793z95.jpg'); 
+  min-height: 90vh; 
+  background-size:cover;
+}
+
+  #hero-text{
+  text-shadow: 5px 5px 10px #000000;
+  padding:2%;
+color:white;
+margin: 22% auto;
+text-align:center;
+}
+
+  #hero-text h1{
+  font-size:3.5em;
+  margin-bottom:2%;    
+}
+  #hero-text p{
+  font-size:2.5em;
+  margin-bottom:2%;    
+}
+
+#hero-text .btn-dark{
+  background-color:var(--light-orange);
+  color: white;
+  border:2px solid var(--orange);
+}
+#hero-text .btn-dark:hover{
+  background-color: white;
+  color: var(--light-orange);
+  border:2px solid var(--light-orange);
+}
+
+  #services{
+  text-align: center;
+  padding: 10% 5%;
+}
+
+
+#about img{
+  border-radius: 50%;
+  border:3px solid white;
+  margin: 2% auto;
+}
+
+body{
+  color:var(--darkest);
+  font-family:"NTR";
+}
+
+
+.btn{
+  font-size:2em;
+  border:1px solid var(--light-orange);
+  color:white;
+  background:none;
+}
+
+.btn-dark{
+    color:white;
+  border:2px solid var(--orange);
+  background-color:var(--orange); 
+  margin: 2%;
+}
+
+
+.btn-dark:hover{
+  color:var(--orange);
+  border:2px solid var(--orange);
+  background:white;
+}
+
+
+#footer h4, #footer h2{
+  font-size:2.1em;
+  margin: 2% auto;
+}
+
+#gallery img{
+  width:100%;
+  height:auto;
+  margin:1%;
+}
+
+#gallery span{
+  margin:0px 2px;
+  color: var(--brown);
+  cursor:pointer;
+  font-size:2em;
+}
+
+#gallery span:hover{
+  text-decoration:none;
+  color: var(--darkest);
+} 
+
+
+h4 {
+  font-size:1.8em;
+}
+
+.hidden{
+  display:none;
+} 
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+#intro-div p{
+  font-size: 2em;
+}
+
+.logo{
+  font-family:"Fascinate";
+  margin: 0px auto;
+}
+nav ul .logo {
+  margin-top:-10px;
+}
+
+#navigation .logo, #top-div-mobile .logo{
+  font-size:3.5em;
+}
+
+#services h2{
+  color:var(--dark-gray);
+  margin: 10px auto;
+}
+#services p{
+  text-align:left;
+}
+
+hr{
+  border: 1px solid grey;
+  width:30%;
+  text-align:center;
+  margin: 2% auto;
+  
+}
+
+#intro-div .col-sm-6 {
+  text-align: center;
+}
+ 
+
+#menu-print{
+  display:none;
+}
+
+#subscriber{
+  text-align: center;
+  background-image: url('https://www.ties.com/blog/wp-content/uploads/2015/03/texturephoto.jpg');
+  font-weight: bold;
+  text-align: center;
+  color: white;
+} 
+
+
+#subscriber form{
+  width:90%;
+  margin:0px auto;
+}
+
+input{
+  padding:2%;
+  font-size: 2.5em;
+}
+
+ input[type=text], input[type=email]{
+  height:30px;
+ font-size: 2em;
+}
+
+
+.fade-in-block{
+    opacity:0;
+}
+
+.links{
+  color:var(--dark-gray);
+  border-bottom:none;
+  display: inline-block;
+  font-weight:bold;
+  font-size: 2.3em;
+}
+
+
+a:hover{
+  color:var(--orange);
+  text-decoration: none;
+}
+.links-mobile, .links h4{
+  color:var(--dark-grey);
+  margin:0px auto;
+  border-bottom:none;
+  font-size: 2.5em;
+}
+
+#navigation{
+  background-color: rgba(250,250,250, 0.8);
+  border: none;
+  padding: 2%;
+  font-size:.7em;
+  color:var(--dark-gray);
+  width:100%;
+  margin:0px auto;
+}
+
+ li {
+  list-style-type:none;
+  margin:0% 1%;
+}
+
+li a{
+  text-decoration: none;
+  color:var(--dark-gray); 
+}
+
+
+
+#social-feed {
+background-color: var(--darkest);
+  color:white;
+  padding: 5% 0% 0%; 
+}
+
+#social-feed img{
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+
+#social-feed img:hover {
+  opacity: 0.6;
+  padding:1%;
+}
+
+.social-links{
+  display:inline;
+  color:white;
+  font-size:1.5em;
+  padding:1px 10px;
+  margin:0px auto;
+  text-align:center;
+}
+
+.social-links:hover{
+  color:var(--light-orange);
+  margin-bottom:1%;
+}
+
+
+#ubscribe-footer{
+ border: 2px solid #996600; 
+  padding:6%;
+  margin-top: 10px;
+}
+
+#footer{
+  background-color:var(--darkest);
+  color:white;
+  padding: 5%;
+  text-align: center;
+  margin:0px auto;
+}
+
+
+.overlay {
+  position: fixed;
+  z-index:3;
+  padding:0px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(43, 32, 36, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  overflow:auto;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup {
+  text-align:center;
+  background-color:#2b2024;
+  margin: 70px auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+#pop-up-images-section img{
+  width:100%;
+}
+#pop-up-images-section h6{
+  color:#fff2f7;
+}
+
+p{
+  font-size: 2em;
+}
+
+.background-layer {
+  background: rgba(0,0,0,0.7);
+  padding: 15% 5%;
+  margin-bottom:0px;
+}
+
+#map {
+  background-image: url('https://blogbysid.files.wordpress.com/2013/09/gray-google-map.jpg'); 
+  background-attachment:fixed; 
+  height:400px;
+  
+}
+
+#team {
+  background-color:white;
+  padding: 6% 2%; 
+  margin: 0% auto;
+  text-align:center;
+  color:black;
+  width: 100%;
+  border-bottom: 2px solid black;
+}
+
+a {
+  color:var(--orange);
+  text-decoration: none;
+}
+
+#bottom{
+  margin: 20px auto 0px;
+  position: relative;
+}
+
+.people{
+  width: 150px;
+}
+
+label{
+  font-size: 1.5em;
+}
+
+#subscribe-footer {
+  margin: 0px auto 20px;
+}
+
+h3 {
+  font-size: 1.9em;
+}
