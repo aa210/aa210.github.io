@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Quicksand|Saira+Stencil+One|Rubik+Mono+One&display=swap');
+
+:root {
+  --blue-color: rgba(20, 20, 57,0.9);
+  --gray-color: rgba(0,0,0,.8);
+  --white-color: #fff2f7;
+  --purple-color: #800040;
+  
+  
+}
+/* Media Queries*/
+@media screen and (max-width:575px){
+
+ .popup-images{
+    display:none;
+  }  
+  .photos{cursor:default;}
+ 
+}
+@media screen and (max-width:766px) {   
+ 
+  h1{
+  font-family:"Saira Stencil One", sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+  
+  #mobile-menu-btn{
+    position:fixed;
+    z-index:4;
+  }
+  
+ 
+  
+ #menu1, #menu2 {
+   display:none; 
+ }
+ 
+  .photos{
+    width:100%;
+    height: 275px;
+  }
+ 
+  
+  #gallery a{
+    width:50%;
+  }
+ 
+  
+}
+@media screen and (min-width:766px) {
+ 
+  h1{
+  font-family:"Saira Stencil One", sans-serif;
+  font-size: 2.8em;
+  margin-bottom: 40px;
+}
+  
+ #gallery img{
+    width:49%
+  }
+  
+  #mobile-menu-btn{ 
+    display:none;
+  } 
+ 
+}
+
+/* Everything Else*/
+*{
+  box-sizing:border-box;
+}
+
+#subscribe-div input[type=email] {
+max-width: 90%;  
+  margin: 0px auto;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+  color:var(--white-color);
+ 
+}
+
+ #hero-text{
+     display: block;
+     text-align: center;
+  color: #eee8e6;
+  text-shadow: 2px 2px 4px #2b2024;
+   position: relative;
+   top:150px;
+    
+  }
+
+html{
+  scroll-behavior: smooth;
+}
+ 
+.sections{
+  text-align:center;
+  padding: 7% 8% 10%;
+  margin: 0px auto;
+}  
+
+/* Home Div*/
+
+#hero{
+  min-height:100vh;
+   background-image: url("https://c.pxhere.com/photos/6a/d8/piano_hands_pianist_piano_keyboard_music_keys_keyboard_instrument_piano_keys-843135.jpg!d");
+  background-attachment:fixed;
+  background-size:cover;
+  background-repeat:repeat;
+
+  
+
+}
+
+
+
+
+
+
+/* About Section*/
+#about{
+   background: var(--blue-color);
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align:center;
+}
+
+#about p{
+  text-align:justify;
+  font-size:1.1em;
+}
+
+#about button{
+  display:block;
+  margin:10px auto;
+}
+
+
+
+.backgrounds{
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: ;
+  padding: 150px 0%; 
+}
+
+
+#back-img2 {
+  background-image: url("https://cdn.fstoppers.com/styles/full/s3/media/2015/10/2_train_sean_molin_concert_music_photography_fstoppers.jpg");
+   position: relative;
+   left: 0px;
+}
+#back-img3 {
+   background-image:url("https://i.ytimg.com/vi/VdEVuk82pTU/maxresdefault.jpg");
+  background-attachment:fixed; background-repeat: no-repeat; background-size: 100% 100%;
+}
+
+button {
+  font-family:"Saira Stencil One";
+  margin: 15px;
+  font-size:1.3em;
+  text-align:center;
+ background: none;
+  color:;
+ border:2px solid var(--white-color);
+  }
+
+button:hover{
+  color:#141439;
+}
+
+
+#contact{
+  background:var(--blue-color);
+  color:var(--white-color);
+  padding:10%;
+}
+
+.fa{
+  font-size:20px;
+}
+#footer{
+  background-color:#1a1a1a;
+  color:;
+  position:relative;
+  margin: 0px auto;
+  bottom:0px;
+  width:100%;
+  padding: 3%;
+  text-align:center;
+  font-size:1.2em;
+}
+
+#footer li a{
+  display:inline;
+  color: var(--white-color);
+  text-decoration:none;
+}
+
+form{
+  margin: 0px auto;
+  text-align: center;  
+}
+
+.form-group, .form-row .col{
+  margin:0px auto;
+}
+
+
+
+
+.logo{
+    font-family: 'Lobster', cursive;
+}
+
+
+
+
+ /* shop Section */
+#shop{
+  background-color: var(--white-color);
+  text-align:center;
+  padding: 7%;
+   color: var(--blue-color);
+}
+
+#shop h6 {
+  color: var(--blue-color);
+  font-weight: bold;
+}
+
+#merch-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.merch{
+  width: 40%;
+}
+
+.merch a {
+  text-decoration:none;
+}
+.merch a:hover {
+  color: var(--purple-color);
+  -webkit-transition: color 500ms;
+   -moz-transition: color 500ms;
+    -ms-transition: color 500ms;
+     -o-transition: color 500ms;
+        transition: color 500ms;
+} 
+
+#shop img{
+  width: 75%;
+}
+
+
+
+
+.social-btns { display:inline; text-decoration:none;} 
+
+.social-btns a{ 
+  text-decoration: none;
+  padding:0px 5px;
+  margin: auto;
+}
+
+.social-btns .fa:hover {
+  color: var(--purple-color);
+  -webkit-transition: color 500ms;
+   -moz-transition: color 500ms;
+    -ms-transition: color 500ms;
+     -o-transition: color 500ms;
+        transition: color 500ms;
+}
+
+#social{
+  display:inline;
+}
+
+
+
+
+/* Gallery Section */
+#gallery{
+  background-color:var(--gray-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+
+
+
+
+
+.photos2{
+  width:25%;
+  margin:0px -2px;
+  height:275px;
+}
+
+.photos3{
+  width:49%;
+  margin:0px -2px;
+  height:275px;
+}
+
+/* Gallery Section -- Pop Up */
+.overlay {
+  position: fixed;
+  z-index:3;
+  padding:0px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(43, 32, 36, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  overflow:auto;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup .close, .popup-mobile .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup {
+  text-align:center;
+  background-color:#141439;
+  margin: 70px auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup-mobile {
+  text-align:center;
+  background-color:#141439;
+  margin: 10%;
+  padding: 5%;
+  border-radius: 5px;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+#popup-gallery img{
+  width:100%;
+}
+#popup-gallery h6{
+  color:var(--white-color);
+}
+
+
+
+
+/* Events Section*/
+#shows{
+  color:var(--blue-color);
+  background-color:var(--white-color);
+  padding: 50px 20px;
+  font-size:1em;
+}
+
+#shows table{
+  margin: 0px auto;
+  text-align:center;
+}
+ #shows tr{
+    padding: 1% 0%;
+   border-bottom:1px solid var(--gray-color);
+   word-wrap: break-word;
+  }
+
+
+#shows thead{
+  border-bottom:3px solid var(--gray-color);
+  border-top:3px solid var(--gray-color);
+  padding:1% 0%;
+}
+
+#shows .btn, #shop .btn{
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}
+
+#shows .btn:hover, 
+#shop .btn:hover{
+  color:var(--blue-color);
+  background:none;
+  border:1px solid var(--blue-color);
+}
+
+
+
+/* header menus */
+
+#menu1{
+  width: 100%;
+  text-align:right;
+  position:fixed;
+  top:0;
+  right: 0;
+  list-style-type: none;
+  margin:0px auto;
+  background: var(--gray-color);
+  padding: 1%;
+  z-index:3;
+
+  
+}
+
+ #menu1 li a{
+  color:var(--white-color);
+  font-weight: bold; 
+  display: inline;
+  font-size:1.2em;
+  margin: 0px 10px; 
+  text-decoration:none;
+}
+  
+#menu1 li a:hover{
+  text-decoration:none;
+  color: lightblue;
+  -webkit-transition: color 500ms;
+   -moz-transition: color 500ms;
+    -ms-transition: color 500ms;
+     -o-transition: color 500ms;
+        transition: color 500ms;
+}
+
+#menu1 .logo{
+ font-size: 2em;  
+}
+
+
+#mobile-menu a:hover{
+  text-decoration:none;
+  color: var(--purple-color);
+}
+
+#mobile-menu h2 a{
+  font-size: 1em;
+  color: var(--white-color);
+  text-decoration:none;
+}
+
+#mobile-menu-btn {
+  position:fixed;
+  left: 10px;
+  top:8px;
+  border-radius: 4px;
+  text-align: center;
+  font-size:30px;
+  color:var(--white-color);
+  padding: 5px;
+  background: var(--blue-color);
+  border:1px solid var(--white-color);
+  -webkit-backface-visibility: hidden;
+}
+
+.fade-in-block{
+    opacity:0;
+}
+
+
+
+
+
+/*Music Section */
+
+#music{
+  background-color:var(--white-color);
+color: var(--blue-color);
+}
+
+#h4, #contact form .dark-btn {
+  margin: 20px auto;
+}
+
+
+#gallery{
+  background-color: var(--blue-color);
+  display:block;
+}
+
+
+.hidden{
+  display:none;
+}
+
+.downloads{
+  color:var(--blue-color);
+  background:none;
+  margin: 1px; 
+}
+.downloads:hover{
+  color:var(--purple-color);
+}
+
+#downloads-section{
+  display: block;
+  margin: 20px 0px;
+}
+
+
+/* Subscriber Section*/
+ #subscribe-div {
+ background: var(--blue-color);
+  font-weight: bold;
+  text-align: center;
+  padding: 8%;
+  font-size: 1.5em;
+} 
+
+
+.dark-btn{
+  background:none;
+  border: 2px solid var(--white-color);
+  color:var(--white-color);
+  margin-top:20px;
+}
+
+.dark-btn:hover{
+  background-color:var(--white-color);
+  color: var(--blue-color);
+}
+
+/*News Section */
+#news h5{
+  font-weight:bold;
+}
+ 
