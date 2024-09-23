@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Music WebSite</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"/>
+ <link rel="stylesheet" type="text/css" href="style.css"> 	
+ 
+</head>
+
+
+<body class="container-fixed">
+   <header>
+    
+  <nav>
+<a href="#mobile-menu">
+    <i class="fa fa-bars" id="mobile-menu-btn" aria-hidden="true" ></i></a>
+  <!--Mobile Menu-->
+   <div class="overlay" id="mobile-menu" > 
+      <div class="popup-mobile">
+		<a class="close" href="#" >&times;</a>
+        <h1 class="logo">Blusera</h1>
+        <h2> <a href="#">HOME </a> </h2>
+        <h2><a href="#music"> MUSIC </a> </h2>
+        <h2><a href="#about">ABOUT</a> </h2>
+        <h2><a href="#shows"> SHOWS</a> </h2>
+        <h2><a href="#gallery"> GALLERY </a> </h2> 
+        <h2><a href="#shop">MERCH </a> </h2>
+        <h2><a href="#contact"> CONTACT</a> </h2>
+      </div>
+    </div> 
+       <!-- 1st desktop menu-->
+     <ul id="menu1">
+      <li class="pull-left logo">BLUSERA</li>  
+       
+        <li class="pull-right"><a href="#contact">CONTACT</a></li>
+        <li class="pull-right"><a href="#shop" >MERCH</a></li>
+       <li class="pull-right"><a href="#gallery">GALLERY</a> </li>
+       <li class="pull-right"><a href="#shows">SHOWS</a></li>
+        <li class="pull-right"> <a href="#about" >ABOUT</a></li>
+         <li class="pull-right"><a href="#music">MUSIC</a></li>
+    
+     
+      
+ 
+     
+       </ul>
+       
+ 
+       
+  </nav>
+  </header>
+  <div id="hero" >     
+  <!--mobileMenu Button-->
+ 
+<div id ="hero-text">
+    <h1 class="logo">BLUSERA</h1>
+    <h5>DJ&nbsp;| Music Composer</h5>  
+  </div>
+  
+  </div>
+ 
+  <div id="subscribe-div">
+    <p class="fade-in-block">Join My Mailing List to Receive Updates and a Free Track!
+    <form>
+      <div class="form-row fade-in-block">
+        <label for="email">Email Address:</label>
+          <input type="email" class="form-control" id="email"/>
+          <button type="submit" class="btn dark-btn"> SIGN UP!</button>
+      </div>  
+    </form>
+      
+    </div> 
+  
+  
+  
+  
+  
+  <div id="music" class="sections">
+        <h1> MUSIC</h1> 
+         <h2> OUT NOW</h2>
+        
+  
+        <img class="img-fluid" alt="album cover artwork" src="https://www.creativevivid.com/wp-content/uploads/2018/04/Music-Album-Cover-Artwork-Template.jpg" width="300px;" >
+          <h3>Lorem Track<br>(Acoustic Version)</h3>
+         <button id="play-button" class="btn music-player" onclick="document.getElementById('player').play()" style=" background-color:#141439; color: white;"><i class="fa fa-play"></i></button>
+    <button id="pause-button" class="btn hidden music-player" style="color:#141439; background:none; border:2px solid #141439;" onclick="document.getElementById('player').pause()"><i class="fa fa-pause"></i></button>  
+        <audio id="player" src="https://www.mfiles.co.uk/mp3-downloads/grieg-holberg-suite-3-gavotte.mp3"></audio>
+         
+        
+  
+    
+    <div id="downloads-section">
+       <h3> Available for download: </h3>
+             <button class="btn  downloads"><i class="fa fa-apple"></i>&nbsp;</button>
+          <button class="btn  downloads"><i class="fa fa-amazon"></i>&nbsp;</button>
+          <button class="btn downloads"><i class="fa fa-spotify"></i>&nbsp;</button>
+          <button class="btn  downloads"><i class="fa fa-soundcloud"></i>&nbsp;</button>
+    </div>
+  </div>
+   
+ 
+</div>    
+     
+  </div>
+
+ <div class="backgrounds" id="back-img2"></div> 
+  <div id="about" class="sections">
+
+    <h1>ABOUT BLUSERA</h1>
+    <div class="row" style="width:100%;">
+      <div class="col-xs-12 col-md-6 fade-in-block" style="padding:5%;"> <img class="img-responsive" alt="man with guitar" src="https://image.shutterstock.com/image-photo/people-art-entertainment-concept-man-260nw-554626624.jpg" width="100%"></div>
+    <div class="col-xs-12 col-md-6">
+
+     <p class="fade-in-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque.Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna.
+      
+    
+      <button class="btn dark-btn">Click To View <br> Press Kit </button>
+    
+  </div>
+    </div>
+  </div> 
+  
+<div class="backgrounds" id="back-img3"></div>  
+<div class="sections" id="shows"> 
+    <h1 >EVENTS</h1>
+     <table class="fade-in-block">
+    <thead>
+        <td>DATE</th>
+        <td>VENUE</th>
+        <td>CITY</th>
+        <td>TICKETS</th>
+      
+    </thead>
+       <tbody>
+      <tr>
+        <td>JUN 15</td>
+        <td>Skyy Bar</td>
+        <td>New York,NY, United States</td>
+        <td><button class="btn" href="http://www.bandsintown.com">BUY</button></td>
+      </tr>
+      <tr>
+        <td>JUL 15</td>
+        <td> Electric<br>Forest</td>
+        <td>TBA, United States</td>
+        <td><button class="btn" href="http://www.eventbrite.com">BUY</button></td>
+      </tr>   
+      <tr>
+        <td>AUG 15</td>
+        <td> Lolla</td>
+        <td>Chicago, IL, United States</td>
+        <td><button class="btn" href="http://www.songkick.com">BUY</button></td>
+      </tr>
+      
+    
+      
+       <tr>
+        <td>OCT 15</td>
+         <td>Concert</br>Hall</td>
+        <td>Atlanta, GA, United States</td>
+        <td><button class="btn">BUY</button></td>
+      </tr>  
+       <tr>
+        <td>DEC 15</td>
+        <td>Winter<br>Fest</td>
+        <td>Los Angeles, CA, United States</td>
+        <td><button class="btn">BUY</button></td>
+      </tr>  
+    </tbody>
+  </table>  
+  </div>
+
+  <div id="gallery">
+      
+        <a href="#pic1"><img class="photos fade-in-block" alt="man playing guitar" src="http://www.davidmyersphotography.com/wp-content/uploads/2014/10/bass-player-brighton-photographer.jpg"></a>
+      
+     
+        <a href="#pic2"><img class="fade-in-block photos" alt="guitarist" src="https://c.pxhere.com/photos/6a/70/guitar_musical_instrument_play_play_guitar_acoustic_guitar_musician-960133.jpg!d"></a>
+      
+       
+        <a href="#pic3"><img class="fade-in-block photos" alt="performer on concert stage" src="https://cdn.fstoppers.com/styles/full/s3/media/2015/10/2_train_sean_molin_concert_music_photography_fstoppers.jpg"></a>
+        
+        
+        <a href="#pic4"><img class="fade-in-block photos" alt="dj controller" src="https://i.ytimg.com/vi/VdEVuk82pTU/maxresdefault.jpg" ></a>
+      
+        
+      </div>
+  
+
+ 
+ <div class="sections" id="shop">
+    <h1 >SHOP OUR MERCH</h1>
+  
+
+     <div id="merch-container">
+   <div class="merch">
+    <a href=""><img alt="hoodie merch" src="https://cdna.lystit.com/200/250/n/photos/8964-2015/08/15/ralph-lauren-french-navy-polo-sport-fleece-pullover-hoodie-blue-product-0-949927288-normal.jpeg">
+      <h6><strong>Hoodie</strong><br> $60</h6></a>
+   </div>
+       
+       <div class="merch">
+    <a href=""><img  alt="baseball cap merch" src="https://cdnd.lystit.com/200/250/tr/photos/hbx/98e6baf3/stone-island-Black-Hats.jpeg">
+      <h6><strong>Baseball Cap</strong><br> $25</h6></a>
+   </div>
+   
+       <div class="merch">
+    <a href=""><img alt="tshirt" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b3833e85-e723-4892-8d6f-67da3d36bc23/d4d0leq-9e769482-5201-4e1c-9119-3f15b081a2b1.jpg/v1/fill/w_900,h_768,q_75,strp/free_tshirt_mockup_template_by_pixeden_d4d0leq-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzY4IiwicGF0aCI6IlwvZlwvYjM4MzNlODUtZTcyMy00ODkyLThkNmYtNjdkYTNkMzZiYzIzXC9kNGQwbGVxLTllNzY5NDgyLTUyMDEtNGUxYy05MTE5LTNmMTViMDgxYTJiMS5qcGciLCJ3aWR0aCI6Ijw9OTAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.Fz_7r2k6lNqtzck9-9sVRh5ChwLjIrmJBMspLMoP1D8">
+      <h6><strong>T-Shirt</strong><br> $40</h6></a>
+   </div>
+       
+   
+
+   </div>  
+     
+    <button class="fade-in-block btn" href="">View More Items</button>
+   
+   
+  </div>
+  <div class="sections" id="contact">
+    <h1 >LET'S WORK TOGETHER!</h1>
+ 
+    <div class="fade-in-block">
+<p>For bookings, business questions, and other inquiries, contact me via email or fill out the form below! :)
+</div>
+      <p><strong> Contact:</strong> hello@bluseramusica.com 
+    
+
+    
+ <form class="fade-in-block">
+    
+   <div class="form-group">
+   <label for="Name"><h5>Name:</h5></label>
+    <input type="text" class="form-control" id="name" name="name">
+    </div>
+   
+    <div class="form-group">
+      <label for="Email"><h5>Email address:</h5></label>
+    <input type="email" class="form-control" id="email" name="email">
+    </div>
+
+    
+ <div class="form-group">
+   <label for="Message"><h5>Message:</h5></label>
+<textarea class="form-control" id="message" rows="3" columns="50" name="message"> </textarea>
+  </div>
+    
+  <input type="submit" class="btn dark-btn" value="SEND"/>
+</form>
+  </div>
+	    </div>
+  <div id="footer">
+    <div id="social"> 
+    <li class="social-btns"><a href=""> <i class="fa fa-facebook"></i></a></li>
+    
+   <li class="social-btns"><a href=""> <i class="fa fa-instagram"></i></a></li>
+ 
+    <li class="social-btns"><a href=""><i class="fa fa-spotify"></i></a></li>
+    
+  <li class="social-btns"><a href=""> <i class="fa fa-twitter"></i></a></li>
+      
+   <li class="social-btns"><a href=""> <i class="fa fa-soundcloud"></i></a></li>
+   
+    </div>
+     <p>By Blusera, 2024. All Rights Reserved</p>
+  </div>
+ 
+  <!--PopUp Images-->
+<div id="popup-gallery">
+   <div class="overlay popup-images" id="pic1"> 
+      <div class="popup">
+       <h6>Click image to close</h6>
+        <a href="#gallery"><img alt="man playing guitar" src="http://www.davidmyersphotography.com/wp-content/uploads/2014/10/bass-player-brighton-photographer.jpg"></a> 
+      </div>
+     
+   </div>
+   <div class="overlay popup-images" id="pic2"> 
+      <div class="popup">
+       <h6>Click image to close</h6>
+        <a href="#gallery"><img alt="guitarist" src="https://c.pxhere.com/photos/6a/70/guitar_musical_instrument_play_play_guitar_acoustic_guitar_musician-960133.jpg!d"></a>     
+     </div>
+   </div>
+  
+     <div class="overlay popup-images" id="pic3" > 
+      <div class="popup">
+       <h6>Click image to close</h6>
+        <a href="#gallery"><img alt="performer on concert stage" src="https://cdn.fstoppers.com/styles/full/s3/media/2015/10/2_train_sean_molin_concert_music_photography_fstoppers.jpg"></a> 
+      </div></div>
+     <div class="overlay popup-images" id="pic4" > 
+      <div class="popup">
+       <h6>Click image to close</h6>
+        <a href="#gallery"><img alt="dj controller" src="https://i.ytimg.com/vi/VdEVuk82pTU/maxresdefault.jpg"></a> 
+      </div></div>
+
+  </div>
+	    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+ </body>
