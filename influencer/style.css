@@ -1,0 +1,677 @@
+@import 'https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans|Montserrat|Amatic+SC|Kaushan+Script';
+
+#about-page .text-muted, #campaign-page h4, #about-page h3, .text-light, #blog-page h4, #contact-page h6{
+    line-height:1.4;
+  }
+
+h1, h2 ,button,.navbar-brand{ 
+  text-transform:uppercase;
+  font-family: "Abril Fatface";
+}
+.logo-home, .navbar-brand{
+  font-family: "Amatic SC";
+}
+.logo-home{
+  font-size:3em;
+}
+.navbar-brand{
+  font-size:4em;
+  color:#3a3a3a;  
+  margin-top:-4px;
+}
+
+
+@media screen and (max-width:550px){
+  .brand-pics{
+  width:96%;
+  display:inline-block;
+  margin:2%;  
+}
+}
+@media screen and (min-width:551px){
+   #brand-pics-section{
+  max-width:48%;
+  display:inline-block;
+  margin:1%;  
+}
+    
+}
+@media screen and (max-width:765px) {
+  
+  #about-page .text-muted, #campaign-page h4{
+    font-size:0.9em;
+  }
+  
+  #about-page h4 i{
+    font-size:1.1em;
+    text-align:center;
+  }
+  
+
+  
+  .headers h1{
+  font-size: 3em;
+}
+.headers {
+  height: 70vh;
+}
+  
+  
+  #brand-gallery{
+    display:none;
+  }
+  #brand-gallery-mobile{
+    display:block;
+  }
+  .brand-pics-mobile{
+    width:80%;
+    margin: 1% auto;
+    text-align:center;
+    
+  }
+  #about-page col-xs-12 .img-responsive{
+      display:hidden;  
+  }
+  
+  #mobile-menu-btn{
+    position:fixed;
+    z-index:4;
+  }
+	
+  
+  
+  
+  .pages{
+  padding: 0px 0% 0px;
+    background-color:white;
+}
+  
+  #navigation{display:none;}
+  
+  .video-pics{
+  display:none;
+ }
+  
+ 
+  
+  #video-page .hvrbox{
+    display:none;
+  }
+  
+  
+  #video-embeds{
+    display:inline-block;
+  }
+  
+}
+@media screen and (min-width:765px) {
+  
+   #about-page .text-muted, #campaign-page h4{
+    font-size:1.2em;
+  }
+  
+  #about-page h4 i{
+    font-size:1.5em;
+    text-align:center;
+  }
+  
+ #home-page{
+    background-image: url("http://highlinewest.com/wp/wp-content/uploads/2016/01/model-headshots-side-turn-vancouver-bc-karmiel.jpg");
+    background-size:100% 100%;
+  margin:0% auto;
+  width:100%;
+  height:80vh;
+}
+  
+  .headers h1{
+  font-size: 4.5em;
+}
+  
+  #brand-gallery{
+    display:block;
+  }
+  #brand-gallery-mobile{
+    display:none;
+  }
+ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block; 
+}
+  #video-embeds{
+    display:none;
+  }
+
+  
+  #mobile-menu-btn{ 
+    display:none;
+  } 
+  .pages{
+  padding: 65px 0% 1%;
+    background-color:white;
+}
+
+.video-pics{
+  display:inline-block;
+ }
+
+  #title{
+  display:none;
+  }
+  
+  #mobileMenuBtn, .panel, #l{
+    display:none;
+  }
+ 
+  #navigation li a:hover{
+  text-decoration:none;  
+  color: #409eef;
+  font-weight:bold;  
+  -moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;  
+}
+  
+ 
+  #navigation .selected a:hover{
+    border-bottom:none;
+    
+  }
+}  
+
+/* Everything Else*/
+*{
+  box-sizing:border-box;
+  line-height:1.4;
+}
+
+#about-page{
+  text-align:center;
+}
+#about-page .row{
+  padding: 3% 10%;
+  margin: 2% auto;
+}
+
+#stats{
+  padding: 0% 10% 5%;
+}
+
+#about-page #stats i{
+  font-size:2em;
+}
+
+#about-page .text-muted{
+  text-align:left;
+}
+
+#about-header{
+  background-image: url("https://i.pinimg.com/736x/31/81/88/31818872001179a9b83aba3dbf292996--summer-photography-lifestyle-photography.jpg");  
+  background-size:fixed;
+  color:white;
+}
+
+#about-page button{
+  border:3px solid white; 
+  background: rgba(55,55,55,.8);   color:white;
+  font-size:0.8em;
+}
+#about-page button:hover{
+  border:2px solid white; color:white; background-color:rgba(0,0,0,0);
+  font-size:0.8em;
+}
+
+#blog-header{
+   background-image: url("https://cdn.shopify.com/s/files/1/1004/0238/files/IMG_0719.JPG?8668461497039251068");  
+  background-size:200%;
+  color:white; 
+}
+
+#blog-page .col-xs-12 {
+  margin: 3% auto;
+  
+}
+#blog-page .col-xs-12 img {
+  width: 70%;
+}
+#blog-page h1, #campaign-page h1{
+  text-align:center;
+  font-size: 3em;
+}
+#blog-page h3{
+  font-weight:bold;
+}
+
+#about-page .row h2, #campaign-page .main h1{
+  font-size: 1.8em;
+  text-align:left;
+}
+
+
+body{
+  font-family:"Montserrat"; 
+  letter-spacing: 0px;
+  font-size:2em;
+  background-color: #1a1a1a;
+}
+
+#brand-gallery{
+  margin:2%;
+  overflow:hidden;
+  background-size:cover;
+}
+
+.brand-pics{
+  width: 47%;
+  position: relative;
+  float: left;
+  margin:1%;
+}
+
+#brand1{
+  height: 600px;
+  float: left; 
+  background-color:red;
+}
+#brand2{
+  height: 300px;
+  background-color:yellow;
+}
+#brand3{
+  height: 300px; 
+  background-color:green;
+}
+#brand4{
+  height: 600px;
+  background-color:blue;
+  float:right;
+}
+#brand5{
+  height: 300px;
+  background-color:teal;
+}
+#brand6{
+  height:300px; 
+  background-color:purple;
+}
+
+.bg-dark{
+  background-color:#b09e99;
+  color: #fefbf9;
+}
+.btn-dark{
+  color: #fefbf9;
+  background-color: #465c5c;
+}
+
+footer .btn-dark{
+  color: #fefbf9;
+  background-color: #465c5c;
+  padding:5px;
+}
+
+
+.btn-dark:hover, footer .btn-dark:hover {
+  color:#fefbf9;
+  background-color: #0f1c1a;
+  -moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+  
+}
+
+#campaign-testimonials {
+background: rgba(1,1,1,0.6);
+  padding:7%;
+  margin: 0% auto;
+  background-color: #2a2a2a;
+  background-size:cover;
+  color: white;
+  text-align:center;
+}
+
+#campaign-testimonials blockquote{
+  font-weight:bold;
+  border-left: 0px;
+  font-size:1em;
+}
+
+#campaign-testimonials footer{
+  text-align:center;
+  color: white;
+}
+
+#campaign-header{
+  color:white;
+  background-image: url("https://i0.hippopx.com/photos/291/294/473/background-image-blue-white-clouds-thumb.jpg");
+  background-size: 100% 100%; 
+}
+
+#contact-header{
+  background-image: url("https://c.pxhere.com/photos/26/3b/camera_nikon_lens_photography_photographic_equipment-157114.jpg!d");
+  color: white;  
+  background-size: 100% 100%;
+}
+
+
+
+#campaign-page ul{
+  text-align:center;
+  list-style-type:none;
+}
+
+#campaign-page {
+  text-align:center;
+}
+
+#campaign-page button{
+  margin-bottom: 10%;
+}
+
+
+
+#video-page button, #blog-page button, #contact-page button{
+  background-color:rgba(0,0,0,0.9);
+  border:2px solid #1a1a1a;
+   color: white;
+  font-size:0.8em;
+}
+#video-page button:hover, #blog-page button:hover, #contact-page button:hover{
+  background: rgba(0,0,0,0);
+  color:#1a1a1a;
+  -moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+
+
+footer{
+  color:#fefbf9;
+  background-color:#1a1a1a;
+  padding: 3% 0%;
+  bottom: 0px;
+  width:100%;
+  margin: 0% auto;
+  text-align:center;
+  font-size:.8em;
+}
+
+footer li a{
+  display:inline;
+  color:#fefbf9;
+  text-decoration:none;
+}
+
+
+.headers{ 
+  text-align:center;
+  font-weight:bold;
+  background-attachment:fixed; background-repeat: no-repeat; background-size: 100% 100%; 
+  padding:0% 0%;
+  margin: 0% auto;
+  height: auto;
+}
+
+
+.hidden{
+  display:none;
+  opacity:0;
+}
+
+#home-page img:hover{
+  opacity:1;
+  cursor:default;
+}
+
+.hvrbox {
+	position: relative;
+  display:inline;
+  margin:0% auto;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(150, 150, 150, 0.6);
+	color: #fff;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top{
+	opacity: 1;
+}
+
+.hvrbox-text {
+	text-align: center;
+	font-size: 1em;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+
+h1,h2{
+  margin-bottom:3%;
+}
+
+input[placeholder]{
+  color:#453a35;
+}
+
+img{
+  width:100% ;
+  height:100%;
+  margin: 0% auto;
+}
+
+#mobile-menu a, #mobile-menu h1{
+  color:white;
+}
+
+
+#mobile-menu a:hover, #mobile-menu h1:hover{
+  color: #409eef;
+  text-decoration:none;
+  -moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;  
+}
+
+#mobile-menu li{
+  font-size: 1.5em;
+  list-style-type:none;
+  font-family: "Abril Fatface";
+  margin: 1% auto;
+}
+#mobile-menu-btn {
+  position:fixed;
+  right: 10px;
+  top:3px;
+  border-radius: 4px;
+  text-align: center;
+  font-size:0.8em;
+  background: rgba(55,55,55,.8);
+  padding: 3% 1%;
+  border:1px solid white;
+  color:white;
+  -webkit-backface-visibility: hidden;
+}
+
+#navigation{
+  background-color: rgba(250,250,250, 0.9);
+  border: none;
+  z-index:4;
+  padding: 5px 8px;
+  font-size:.6em;
+  color:#3a3a3a;
+  position:fixed;
+  width:100%;
+}
+
+#navigation li{
+  list-style-type:none;
+}
+
+#navigation li a{
+  text-decoration: none;
+  color:#3a3a3a; 
+}
+
+.links{
+  color:#453a35;
+  border-bottom:none;
+  display: inline-block;
+  padding-top:1%;
+  padding-left: 1%;
+  padding-right: 1%; 
+  font-size: 1.5em;
+}
+
+
+.selected {
+  font-weight:bold;
+  color:#7585ef;
+}
+
+.main{
+  padding:10%;
+}
+
+.social-btns{
+  list-style-type:none;
+  display:inline;
+  font-size: 1.3em;
+  padding-left: 4px;
+  padding-right: 4px;
+} 
+
+
+footer .social-btns a:hover{
+  border-bottom:none; color:#409eef;
+  -moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+  
+  
+} 
+
+#video-page{
+  text-align: center;
+  margin:0px auto;
+}
+
+#video-page iframe{
+  margin: 1% auto 5%;
+}
+
+.video-pics{
+  margin:3% auto;
+}
+.video-pics:hover{
+  cursor:pointer;
+}
+#videos-header{
+  background-image: url("https://s3.amazonaws.com/pbblogassets/uploads/2017/08/27130641/Photography-Cover.jpg");
+  background-size:100% 100%;
+  color:white;
+}
+
+
+#social{
+  display:inline;
+  text-align:center;
+}
+
+
+.overlay { 
+  position: fixed;
+  z-index:3;
+  padding:0px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  overflow:auto;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup {
+  text-align:center;
+  background-color:#1a1a1a;
+  margin: 70px auto;
+  padding:3%;
+  border-radius: 5px;
+  width: 90%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+
+
+
+.video-page h3 {
+  margin: 10% auto;
+}
+
+label {
+  width: 100%;
+  margin: 2%;
+}
+
+.header-overlay {
+ background: rgba(1,1,1,0.2);
+  padding:20% 10%;
+}
+
+ #home-page{
+    background-image: url("");
+   background-color:black;
+    background-size:100% 100%;
+  margin:0% auto;
+  width:100%;
+  height:90vh;
+  padding: 0% 5% 15%;
+}
+
+#home-page-text{
+  display:inline-block;
+  width:100%;
+  padding: 100px 0px;  
+  margin:0% auto;
+  text-align:center;
+  color:white;
+  
+}
+
+#contact-page {
+  width:100%;
+}
