@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans|Arima+Madurai:100|Bad+Script|Fascinate|NTR');
 
+/*Sarina&display=swap,Megrim, Diplomata/Biryani:200 */
+
 :root {
   --darkest: #1a1100;
   --orange: #996300;
@@ -89,7 +91,7 @@
   h1{
     font-size: 5em;
   }
-  p, #hero-text p, .links,  .links h4, .navbar-brand, .about-text p, #team,  #footer h4, #footer h2{
+  p, #hero-text p, .links,  .links h4, .navbar-brand, #about-text p, #team,  #footer h4, #footer h2{
     font-size: 3.2em;
   }
   
@@ -180,7 +182,15 @@ text-align:center;
 #about img{
   border-radius: 50%;
   border:3px solid white;
-  margin: 2% auto;
+ margin: 2% auto;
+  width: 40%;
+}
+
+#about-img {
+   border-radius: 50%;
+  border:3px solid white;
+ margin: 2% auto;
+  width: 400px;
 }
 
 body{
