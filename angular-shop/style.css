@@ -1,0 +1,180 @@
+*{font-family: megrim;}
+
+@media screen and (max-width:400px) {
+  .BRAND:before{
+    content: "AngShop"; 
+    font-family:"megrim";
+    font-size:250%;
+    padding:15px 0px; 
+    display:inline;
+  }
+  
+}
+
+@media screen and (min-width:401px) {
+  .BRAND:before{
+    content: "theANGULARSHOP";
+    font-family:"megrim";
+    font-size:250%; 
+    padding:15px 0px; 
+    display:inline;
+  }
+}
+
+
+
+footer {
+  text-align:center;
+  background-color:#1a1a1a;
+  padding:10px; 
+  color:white; 
+  position: fixed;
+  bottom:0;
+  margin:0 auto;
+  font-family:helvetica;
+  width: 100%;
+}
+
+.BUY{
+  background-color:black; 
+  color:white;
+  font-weight:bold; 
+  width:100%; 
+}
+
+blockquote, form{
+  font-family:Helvetica;
+  font-size:150%;
+}
+.pix{
+  width:75%
+} /*Basepage photos*/
+.pix:hover {opacity:0.3;}
+.img-thumbnails img{
+  width:80px;
+} 
+.img-thumbnails li{ display: inline;}
+.img-thumbnail ul{margin: 0 auto;} /*popup thumbs*/
+ #main{text-align:center;width:50%;}
+blockquote{font-size: 100%;}
+#r {display:inline;float:right;}
+#l {display:inline;float:left;}
+h5{color:grey;}
+#shoes a{text-decoration:none; color: #48494A}
+
+#page{
+  width:95%; 
+  margin:0px auto;
+  font-size:110%; 
+  padding: 70px;
+}
+
+
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+input {
+  display: none;
+}
+
+.glyphicon{
+  font-size:120%; 
+  padding:15px 0px;
+}
+.glyphicon-search{  
+  cursor: pointer;
+  margin-right:20px;
+}
+
+label {
+  cursor: pointer;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.panel{
+  -webkit-transition: .1s ease;
+  transition: .1s;
+  height: 0;
+  overflow: auto;
+  background: #F5F0CF;
+  margin-top: 30px;
+  border-radius: 0px;
+  width:95%;
+  position:fixed;
+  z-index:2;
+  font-weight:bold;
+  text-align:left; 
+}
+
+a{
+  text-decoration: none; 
+  color:#1a1a1a; 
+  cursor: pointer;
+}
+
+
+input:checked + .panel {
+  height: auto;
+  padding: 15px;
+}
+
+#topbar{
+  text-align:center; 
+  position:fixed; 
+  z-index:3; 
+  width:100%;
+  top:0px;
+  background-color: white;
+}
+
+
+
+#shoes{
+  position:relative;
+  background-color:white;
+  padding:0px;
+}
+
+.overlay {
+  position: fixed;
+  z-index:3;
+  padding:0px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(250, 255, 255, 0.6);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  overflow:auto;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 50%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
