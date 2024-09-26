@@ -1,0 +1,169 @@
+<html ng-app="shoeShop">   
+	<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>Angular Shoe Shop</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+ <link rel="stylesheet" type="text/css" href="style.css"> 	
+ 
+</head>
+	
+<body ng-controller="ShopController as shop">
+<!-- HEADER BAR -->
+  <header>
+<nav id="topbar">
+<label for="check" id="l"><span class="glyphicon glyphicon-menu-hamburger"></span></label>
+
+  <span class="BRAND"></span>
+   
+  <label id="r"><span class="glyphicon glyphicon-search" ></span></label>
+  
+<!--DROP DOWN MENU -->  
+ <input id="check" type="checkbox" />
+  <ul class="panel pull-left" style="list-style-type: none">
+    <a><li>SALE</li></a>
+    <a><li> Shoes</li></a>
+    <a><li> Dress</li></a>
+    <a><li> Tops</li></a>
+    <a><li> Outerwear</li></a>
+    <a><li> Bottoms</li></a>  
+</ul> 
+  </header>
+ <!-- Base Page --> 
+<div id="page">
+  <p>Home > Shoes</p>
+ <div id="shoes" class="col-xs-12 col-sm-6" ng-repeat="product in shop.products">
+   <a href="#{{product.id}}">
+   <img class="pix" ng-src="{{product.images[0]}}"/>  
+     <h3>{{product.name}}</h3>
+   <p>${{product.price}}</h>
+   </a>
+</div>
+    </div
+   <!-- BASE PAGE FOOTER -->
+  
+   <footer>Images borrowed from SteveMadden.com</footer> 
+  
+  
+  
+  <!-- pop up window-->
+  <div ng-repeat="product in shop.products" id="{{product.id}}" class="overlay" >
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+    <!-- Item title and price in popup window-->
+    <h3>{{product.name}}</h3>
+    <h5>${{product.price}}</h5>
+    
+    <!-- gallery in popup window-->
+<div ng-controller="GalleryController as gallery" >
+<section ng-controller = "ImgController as img">   
+  
+<div hg-repeat="image in product.images">
+ <img id="main" class="center-block" ng-show="img.isSet(1)" ng-src="{{product.images[0]}}" />
+ <img id="main" class="center-block" ng-show="img.isSet(2)" ng-src="{{product.images[1]}}" /> 
+ <img id="main" class="center-block" ng-show="img.isSet(3)" ng-src="{{product.images[2]}}" />  
+          </div>    
+  <ul class="img-thumbnails clearfix">
+ <li>
+   <a href="" ng-click="img.setImg(1)"><img ng-src="{{product.images[0]}}" /></li>'
+      
+    <li>
+   <a href="" ng-click="img.setImg(2)"><img ng-src="{{product.images[1]}}" /></li>
+      
+     <li>
+       <a href="" ng-click="img.setImg(3)"><img ng-src="{{product.images[2]}}" /></li></a>
+  </ul>
+ </section>
+</div>
+    
+    <!-- Purchase Options -->
+    <form role="form">
+      <select class="form-control" id="sel1">
+        <option value="">Select Size</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+      </select>
+ 
+      <select class="form-control" id="sel1">
+        <option value="">Select QTY</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      
+       <button type="submit" class="btn BUY">ADD TO BAG</button>  
+      
+    </form>
+   
+    <!-- Info tabs in popup-->
+    <section ng-controller="TabController as tab">
+  <ul class="nav nav-pills">
+    <li ng-class="{ active:tab.isSet(1) }"> 
+      <a href="" ng-click="tab.setTab(1)">Description</a></li>            
+   <li ng-class="{active:tab.isSet(3)}">
+  <a href="" ng-click="tab.setTab(3)">Reviews</a>
+ </li>
+  </ul>
+
+          <!--  Description Tab's Content  -->
+          <div ng-show="tab.isSet(1)">
+            <blockquote>{{product.description}}
+             
+              <b>Color:</b> {{product.color}}
+            </blockquote>  
+          </div>
+          <!--  Review Tab's Content  -->
+          <div ng-show="tab.isSet(3)">
+            <!--  Product Reviews List -->
+            <ul>
+              <li ng-repeat="review in product.reviews">
+                <blockquote>
+                  <!--<strong>{{review.stars}}</strong>-->
+                  {{review.body}}
+                  <cite class="clearfix">—{{review.author}}</cite>
+                </blockquote>
+              </li>
+            </ul>
+
+            <!--  Review Form -->
+            <form name="reviewForm">
+
+              <!--  Live Preview -->
+              <blockquote ng-show="review">
+                <!--<strong>{{review.stars}} Stars</strong>-->
+                {{review.body}}
+                <cite class="clearfix">—{{review.author}}</cite>
+              </blockquote>
+              <!--  Review Form -->
+              <h4>Submit a Review</h4>
+              <fieldset class="form-group">
+                <!--<select ng-model="review.stars" class="form-control" ng-options="stars for stars in [5 stars,4,3,2,1]" title="Stars">
+                  <option value="">Rate the Product</option>
+                </select>-->
+              </fieldset>
+              <fieldset class="form-group">
+                <textarea ng-model="review.body" class="form-control" placeholder="Write a short review of the product..." title="Review"></textarea>
+              </fieldset>
+              <fieldset class="form-group">
+                <input ng-model="review.author" type="email" class="form-control" placeholder="jimmyDean@example.org" title="Email" />
+              </fieldset>
+              <fieldset class="form-group">
+                <input type="submit" class="btn btn-primary pull-right" value="Submit Review" />
+              </fieldset>
+            </form>
+          </div>
+        </section>
+      
+	</div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
