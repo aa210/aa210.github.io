@@ -3,10 +3,27 @@
 
 @media screen and (max-width:767px){
   
+  #about > .row{
+    display: flex;
+  text-align: left;
+}
+
+
+#about-text{
+  width: 49%;
+  margin: 1%;
+}
+  
+  #about-image{
+  width: 47%;
+  margin: 1%;
+}
+  
   #about-image img{
   padding: 1%;
   width: 180px;
 }
+  
   
   h2{
   margin:5% auto; 
@@ -108,12 +125,16 @@ font-family: "Poiret One";
 }
   
 }
-
 @media screen and (min-width:767px){
+  
+  #about-image{
+  width: 100%;
+    text-align:center;
+}
   
   #about-image img{
   padding: 1%;
-    width: 325px;
+    width: 300px;
 }
   
  h2{
@@ -484,23 +505,8 @@ display:inline-block;
 
 }
 
-#about-image{
-  width: 47%;
-  margin: 1%;
-
-}
 
 
-#about > .row{
-    display: flex;
-  text-align: left;
-}
-
-
-#about-text{
-  width: 49%;
-  margin: 1%;
-}
 
 
 
