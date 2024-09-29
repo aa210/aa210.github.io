@@ -473,11 +473,12 @@ display:inline-block;
   padding: 10% 5%;
    display: flex;
   text-align: left;
-  align-items: center;
+ //align-items: center;
+  justify-content: space-between;
 }
 
 #about-image{
-  width: 45%;
+  width: 45%
 }
 #about-image img{
   //width: 100px;
