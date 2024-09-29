@@ -480,7 +480,7 @@ display:inline-block;
   width: 49%;
 }
 #about-image img{
-  width: 100px;
+  //width: 100px;
 }
 
 #about-text{
