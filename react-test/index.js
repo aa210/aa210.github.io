@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom/client';
 
 
 function Hello() {
-        return <div>
+        return  (
+          <div>
           <h1>Hello World!</h1>
           <h2> How's It Going?</h2>
           </div>;
+        )
       }
 
       const container = document.getElementById('mydiv');
