@@ -1,0 +1,67 @@
+:root {
+  --blue-color: #61DAFB;
+  --gray-color: #282d35;
+  --dark-color: #21222A;  
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+   height: 100vh;
+   background-color: var(--gray-color);  
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: var(--dark-color); ;
+  padding: 30px 25px;
+  height: 90px;
+  color: white;
+}
+
+.nav-logo {
+  height: 30px;
+  margin-right: 7px;
+}
+
+.nav-logo-text {
+  color:var(--blue-color);
+  margin: 0;
+  margin-right: auto;
+}
+
+.nav-title {
+  margin: 0;
+}
+
+main { /*doesn't take up entire body*/
+  color: white;
+  padding: 60px;
+  background-image:url("https://creazilla-store.fra1.digitaloceanspaces.com/icons/3232826/react-icon-md.png");
+  background-repeat: no-repeat;
+background-position-x: right 50%;
+}
+
+.main-title {
+  font-size: 40px;
+  margin:0;
+  letter-spacing:-.1em;
+}
+
+.list {
+  margin-top:45px;
+   max-width: 400px;
+}
+
+.list > li {
+  line-height: 20px;
+}
+
+.list > li::marker { /* accepted by Safari, Firefox and some new Chrome browsers */
+  color: var(--blue-color);
+  font-size: 1.2rem;
+}
