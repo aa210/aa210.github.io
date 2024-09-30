@@ -1,16 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 
+function NavigationBar() {
+  // TODO: Actually implement a navigation bar
+  return <h1>Hello from React!</h1>;
+}
 
-function Hello() {
-        return  (
-          <div>
-          <h1>Hello World!</h1>
-          <h2> How's It Going?</h2>
-          </div>;
-        )
-      }
-
-      const container = document.getElementById('mydiv');
-      const root = ReactDOM.createRoot(container);
-      root.render(<Hello />)
+const domNode = document.getElementById('mydiv');
+const root = createRoot(domNode);
+root.render(<NavigationBar />);
