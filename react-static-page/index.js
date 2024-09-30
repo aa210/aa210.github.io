@@ -1,5 +1,8 @@
-import React from "react"
-import ReactDOM from "react-dom/client"
+import { createRoot } from 'react-dom/client';
+
+// Render your React component instead
+const root = createRoot(document.getElementById('root'));
+root.render(<App />);
 
 function Navbar() {
     return (
@@ -34,5 +37,3 @@ function App(){
   </>    
   )
 }
-
-ReactDOM.createRoot(document.getElementById("root")).render(<App />)
