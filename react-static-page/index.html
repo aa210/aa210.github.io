@@ -16,12 +16,6 @@
       <!-- the root, entire container for the app-->
  
          <script type="text/babel" src="index.js">
-import { createRoot } from 'react-dom/client';
-
-// Render your React component instead
-const root = createRoot(document.getElementById('root'));
-root.render(<App />);
-
 function Navbar() {
     return (
         <nav>
@@ -31,6 +25,11 @@ function Navbar() {
         </nav>
     )
 }
+
+/*Main.JS stuff:
+import React from "react"
+export default...
+*/
 
 function Main() {
     return (
@@ -50,14 +49,12 @@ function Main() {
 function App(){
   return (
   <>
-    <Navbar />
-    <Main />
+    <Navbar /><Main />
   </>    
   )
 }
 
-
-           
+ReactDOM.render(<App />, document.getElementById("root"));
          </script>
    </body>
 </html>
