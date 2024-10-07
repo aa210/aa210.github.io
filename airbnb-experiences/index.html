@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <title>AirBnb Experiences (Clone)</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css">
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin>
+  </script> <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+</head> 
+
+<body>
+      <div id="root"></div> 
+      <!-- the root, entire container for the app-->
+
+
+ <script type="text/babel">
+/* import React from "react"
+import ReactDOM from "react-dom" */
+
+const experiences = [
+  { 
+ key:1,   img:"https://c1.staticflickr.com/3/2563/4148739768_fde3445eaa.jpg",
+                rating:"5.0",
+                reviewCount:6,
+                location:"USA",
+                title:"Piano Lessons with Instructor",
+                price:100,
+                openSpots:0
+    
+  },
+  {
+    key:2,
+    img:"http://sundancehillsequestrian.com/wp-content/uploads/2018/03/Image012-e1520277295705.jpg",
+                rating:"5.0",
+                reviewCount:10,
+                location:"USA",
+                title:"Horseback Riding with Instructor",
+                price:200,
+    openSpots:10
+    
+  },
+  {
+    key:3,
+    img:"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F2250521%2Fpexels-photo-2250521.jpeg%3Fcs%3Dsrgb%26dl%3Dphoto-of-man-paddling-kayak-in-raging-river-2250521.jpg%26fm%3Djpg&f=1&nofb=1&ipt=5c7e338cde37b0a5b41a14f78e31bf4b7425efbd3e6d5a56e99a7e3d75fbbe68&ipo=images",
+                rating:"5.0",
+                reviewCount:20,
+                location:"Canada",
+                title:"Kayak on a Lake",
+                price:35,
+    openSpots:10
+  },
+  {
+    key:4,
+    img:"https://www.exclusive-france-tours.com/wp-content/uploads/Cooking_Class_at_Mozaic_8056044088.jpg",
+                rating:"5.0",
+                reviewCount:6,
+                location:"Online",
+                title:"Learn to Cook with a Chef",
+                price:100,
+    openSpots:10
+  }
+]
+
+function Navbar(){
+  return (
+     <nav>
+    <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/airbnb-logo.png" className="nav-logo"/>
+    </nav>    
+  ) 
+}
+
+function Hero(){
+  return (
+   <section className="hero">
+      <img src="https://www.dpgo.com/go/wp-content/uploads/2021/04/Airbnb_Experiences__Are_They_the_Future_.png" class="hero-photo" />
+       <h1 className="hero-header" >Online Experiences</h1>
+     <p className="hero-text">Join unique interactive activities led by 
+   one-of-a-kind hosts—all without leaving home.</p>
+    </section> 
+  ) 
+}
+
+function Card(props) {
+  
+    return (
+       <div className="card">
+
+            <img src={props.item.img} className="card-image" />
+            <div className="card-stats">
+                <img src="http://www.clker.com/cliparts/l/S/A/J/9/a/star-red-md.png" className="card-star" />
+                <span>{props.item.rating}</span>
+                <span className="gray">({props.item.reviewCount}) • </span>
+                <span className="gray">{props.item.location}</span>
+            </div>
+            <p>{props.item.title}</p>
+            <p><span className="bold">From ${props.item.price}</span> / person</p>
+        </div>
+    )
+    }
+
+function App() {  
+   const cards = experiences.map(item => {
+     return (
+       <Card 
+        item={item}
+         />
+       )
+   })
+       return (
+  <>
+      <Navbar />
+      <Hero />
+           <section className="cards-list">
+       {cards}
+           </section>
+  </>
+  ) 
+}
+ReactDOM.render(<App />, document.getElementById("root"))
+         </script>
+   </body>
+</html>
