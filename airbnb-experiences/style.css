@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins';
+}
+nav {
+    border-bottom: grey;
+  box-shadow: 6px 3px 7px grey;
+  height: 70px;
+  padding: 10px 30px;
+  display:flex; /*confines logo within flexbox element*/
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+
+.nav-logo {
+     max-width: 200px; /* prevents safari bug of making image stretching entire width */
+    height: 70px;
+}
+
+section {
+  padding: 20px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.hero-photo{
+  max-width: 400px;
+  align-self: center;
+}
+
+.hero-header{
+  margin-bottom: 16px;
+}
+
+.hero-text {
+  margin-top: 10px;
+}
+
+
+.card {
+  width: 175px;
+  font-size: 0.75rem; /* 12px, for cross browser compatibility*/
+  flex: 0 0 auto;         
+    display: flex;          
+    flex-direction: column; 
+}
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 9px;
+  height: 200px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.gray{
+  color: gray;
+}
+
+.cards-list {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+h2 {
+  font-size:0.75rem; 
+  font-weight:normal;
+}
+
+.card-star {
+    height: 14px;
+}
+.card-price {
+    margin-top: auto;
+}
+
+.card-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card-stats {
+    display: flex;
+    align-items: center;
+}
